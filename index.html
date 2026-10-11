@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Downloader - Developer Website</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #22c55e;
+      --accent-hover: #16a34a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1e293b, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      width: 100%;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #38bdf8;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin-left: 20px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(34, 197, 94, 0.2);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding-top: 30px;
+      font-size: 13px;
+      color: #64748b;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Official Developer Website</div>
+      <h1>Status Downloader</h1>
+      <p class="subtitle">Fast, lightweight, and secure status saver application for Android devices.</p>
+    </div>
+
+    <div class="card">
+      <h2>About the App</h2>
+      <p>Status Downloader allows users to easily view, save, and manage statuses locally on their devices. All operations happen directly on your device with high performance, strict privacy standards, and zero unauthorized data harvesting.</p>
+      <div class="links-grid">
+        <a class="btn" href="app-ads.txt" target="_blank">📄 View app-ads.txt</a>
+        <a class="btn" href="mailto:triptrace.st4rk@gmail.com">✉️ Contact Support</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Privacy &amp; Data Security</h2>
+      <p>We respect your privacy:</p>
+      <ul>
+        <li><strong>No Account Required:</strong> You never need to sign up or provide personal details.</li>
+        <li><strong>Local Processing:</strong> Media files are read and stored strictly on your local device.</li>
+        <li><strong>Advertising Compliance:</strong> Ads served through Google AdMob comply with all developer and privacy guidelines.</li>
+      </ul>
+      <p>Support inquiries or feedback: <strong>triptrace.st4rk@gmail.com</strong></p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Status Downloader. All rights reserved. &bull; <a href="app-ads.txt">app-ads.txt</a></p>
+    </footer>
+  </div>
+</body>
+</html>
